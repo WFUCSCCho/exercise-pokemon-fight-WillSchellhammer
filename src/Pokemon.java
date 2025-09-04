@@ -42,7 +42,7 @@ public class Pokemon implements Comparable <Pokemon> {
     public String toString() {
         String pokeInfo;
         pokeInfo = "(" + num + ") " + name + " [ " + type1;
-        if (type2.length() > 0)
+        if (!type2.isEmpty())
             pokeInfo += " / " + type2;
         pokeInfo += " ]: Total: " + total;
         pokeInfo += ", Speed: " + speed;
